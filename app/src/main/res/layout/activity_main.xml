@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@mipmap/backg"
+    >
+
+    <ImageView
+        android:layout_width="550dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo1" />
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="180dp"
+        android:id="@+id/kandidati"
+        android:src="@mipmap/btn_kandidat"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:ems="10"
+        android:textSize="30dp"
+        android:id="@+id/potrebitel"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:fontFeatureSettings="ь"
+       />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:inputType="textPassword"
+        android:hint="Парола"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_below="@+id/potrebitel"
+        android:layout_alignLeft="@+id/potrebitel"
+        android:layout_alignStart="@+id/potrebitel"
+        />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:id="@+id/reg"
+        android:src="@mipmap/btn3"
+        android:layout_above="@+id/kandidati"
+        android:layout_toRightOf="@+id/login"
+        android:layout_toEndOf="@+id/login" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:id="@+id/login"
+        android:src="@mipmap/btn4"
+        android:layout_alignTop="@+id/reg"
+        android:layout_alignLeft="@+id/kandidati"
+        android:layout_alignStart="@+id/kandidati" />
+</RelativeLayout>
